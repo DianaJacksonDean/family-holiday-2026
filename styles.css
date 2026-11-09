@@ -76,14 +76,13 @@ button { font: inherit; cursor: pointer; }
 .date-number b { font: 1.8rem/.95 var(--serif); letter-spacing: -.05em; }
 .date-number span { font-size: .61rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
 .day h2 { font-size: 1.55rem; line-height: 1.1; }
-.day p { margin-top: .2rem; color: var(--muted); font-size: .77rem; line-height: 1.35; }
 .event { padding-top: 1.18rem; }
 .event + .event { margin-top: 1.15rem; border-top: 1px solid var(--rule); }
 .event-time { color: var(--berry); font-size: .72rem; font-weight: 750; letter-spacing: .055em; }
 .event h3 { margin-top: .2rem; font-size: 1.34rem; line-height: 1.22; text-wrap: balance; }
 .venue { margin-top: .29rem; font-size: .83rem; font-weight: 700; }
 .address { color: var(--muted); font-size: .77rem; }
-.event-copy { margin-top: .48rem; color: var(--muted); font-size: .89rem; }
+.event-copy { margin-top: .48rem; color: var(--muted); font-size: .89rem; white-space: pre-line; }
 .rsvp-link { display: inline-flex; align-items: center; min-height: 44px; font-size: .86rem; font-weight: 650; }
 .gift-wrap { margin-top: 1.3rem; }
 .gift {
@@ -102,9 +101,6 @@ button { font: inherit; cursor: pointer; }
 .gift-copy { margin-top: .93rem; font-size: .89rem; color: #48383a; }
 .gift-copy p + p { margin-top: .67rem; }
 .gift-copy strong { color: #6c2439; }
-.gift-facts { margin-top: .95rem; border-top: 1px solid #ddbbb6; padding-top: .66rem; color: #6c2439; font-size: .77rem; line-height: 1.45; }
-.gift-facts p + p { margin-top: .26rem; }
-.gift-facts time { white-space: nowrap; }
 [hidden] { display: none !important; }
 .skip-link {
   position: absolute; top: .75rem; left: .75rem; z-index: 1;
@@ -127,7 +123,6 @@ button { font: inherit; cursor: pointer; }
 }
 .section-nav .primary-button:hover { background: #6f2236; color: var(--paper); }
 .section-nav .primary-button:focus-visible { outline-color: var(--paper); }
-.gift-facts a { font-weight: 650; }
 .details {
   padding-block: 1.48rem 1.65rem; border-top: 1px solid var(--rule);
 }

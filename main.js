@@ -25,27 +25,22 @@ for (const [day, events] of Object.entries(invitationContent.days)) {
     if (event.address) article.append(element("p", event.address, "address"));
     article.append(element("p", event.description, "event-copy"));
     if (event.rsvp) {
-      const rsvpLink = element("a", "RSVP", "rsvp-link");
+      const rsvpLink = element("a", "RSVP Required", "rsvp-link");
       rsvpLink.href = "#rsvp";
       rsvpLink.dataset.rsvp = "";
-      rsvpLink.setAttribute("aria-label", `RSVP for ${event.title}`);
+      rsvpLink.setAttribute("aria-label", `RSVP Required for ${event.title}`);
       article.append(rsvpLink);
     }
     schedule.append(article);
   }
 }
 
-const { date, dateTime } = invitationContent.rsvpDeadline;
-const giftDeadline = document.getElementById("gift-deadline");
-giftDeadline.append(element("strong", "Sign up by"), " ", timeElement(date, dateTime));
-giftDeadline.hidden = false;
-
 const navDeadline = new Intl.DateTimeFormat("en-US", {
   weekday: "long",
   month: "numeric",
   day: "numeric",
   timeZone: "UTC",
-}).format(new Date(dateTime));
+}).format(new Date(invitationContent.rsvpDeadline));
 document.getElementById("nav-rsvp").textContent = `RSVP by ${navDeadline}`;
 
 const announcements = document.getElementById("announcements");
