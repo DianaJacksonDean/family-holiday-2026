@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Join us for two days of Christmas and Thanksgiving with family, November 25–26, 2026.">
+  <title>The Most Wonderful Times of the Year</title>
+  <link rel="icon" href="assets/holiday-ornament.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="content.js"></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="invitation" id="top">
+    <div class="planning-notice" id="updates-notice" hidden>
+      <p>New family plans are posted.</p>
+      <a href="#updates">See family updates <span aria-hidden="true">→</span></a>
+    </div>
+    <header class="hero">
+      <img class="ornament" src="assets/holiday-ornament.svg" alt="" width="128" height="142">
+      <p class="date"><time datetime="2026-11-25">November 25</time>–<time datetime="2026-11-26">26, 2026</time></p>
+      <h1><span>The Most</span> <span><em>Wonderful</em></span> <span>Times of the Year</span></h1>
+      <div class="hero-divider" aria-hidden="true"><span></span></div>
+      <p class="subtitle">A Very Merry Thanksgiving!</p>
+    </header>
+    <nav class="section-nav" id="rsvp" aria-label="Invitation sections">
+      <a href="#wednesday">Schedule</a>
+      <a class="primary-button" id="nav-rsvp" href="https://tally.so/r/VpjABl" data-rsvp>RSVP by Sunday, 11/15</a>
+      <a href="#playlist">Playlist</a>
+    </nav>
+    <main id="main" tabindex="-1">
+      <section class="section welcome" aria-labelledby="welcome-title">
+        <h2 id="welcome-title">Come on over.</h2>
+        <p>Two holidays, two days, and a good excuse to spend more time together. Come for the games, the gravy, or just a chance to sit and catch up. We’re grateful we get to do it together.</p>
+        <p><strong>Please submit a separate RSVP for <u>each person</u> in your household.</strong></p>
+        <noscript><p class="availability">Turn on JavaScript to see the current event times, locations, and updates.</p></noscript>
+      </section>
+
+      <section class="section schedule" aria-labelledby="wednesday-title">
+        <header class="day" id="wednesday" tabindex="-1">
+          <time class="date-number" datetime="2026-11-25" aria-label="November 25"><b>25</b><span>Nov</span></time>
+          <div>
+            <h2 id="wednesday-title">Wednesday</h2>
+            <p>Axes first, then a little Christmas.</p>
+          </div>
+        </header>
+        <div id="wednesday-events"></div>
+      </section>
+
+      <section class="section schedule" aria-labelledby="thursday-title">
+        <header class="day" id="thursday" tabindex="-1">
+          <time class="date-number" datetime="2026-11-26" aria-label="November 26"><b>26</b><span>Nov</span></time>
+          <div>
+            <h2 id="thursday-title">Thursday</h2>
+            <p>Thanksgiving dinner and time together.</p>
+          </div>
+        </header>
+        <div id="thursday-events"></div>
+
+        <section class="gift-wrap" aria-labelledby="gift">
+          <div class="gift">
+            <p class="gift-date">Thanksgiving Day · Optional</p>
+            <h2 id="gift" tabindex="-1">Wrapped with Reason</h2>
+            <p class="gift-tagline">Because it’s the thought that counts.</p>
+            <div class="gift-copy">
+              <p>This year, we’re trying something a little different!</p>
+              <p>Choose or make something meaningful for the person whose name you draw. On Thanksgiving, share why you chose it.</p>
+              <p>Handmade gifts, favorite treats, little keepsakes, or something connected to a special memory are all welcome.</p>
+              <p><strong>$20 maximum. No minimum. No pressure. Just a little thought and a lot of heart.</strong></p>
+            </div>
+            <div class="gift-facts">
+              <p id="gift-deadline" hidden></p>
+              <p>We’ll go ahead with at least six participants and send details to everyone who signs up. Each person gives one gift and receives one.</p>
+              <p><a class="rsvp-link" href="#rsvp" data-rsvp>Sign up in the family RSVP</a></p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="section details" aria-labelledby="playlist">
+        <h2 id="playlist" tabindex="-1">The Family Holiday Playlist</h2>
+        <p>What song should we cue up? Add a favorite you’d love to hear or sing together.</p>
+        <a class="primary-button" href="https://music.youtube.com/playlist?list=PLSuj_5_t4T0A&amp;jct=w0dtB_e68LFQ_TaXq0Niwg">Add a song on YouTube Music</a>
+      </section>
+
+      <section class="section details" aria-labelledby="contributions">
+        <h2 id="contributions">A Little Help Goes a Long Way <span aria-hidden="true">❤️</span></h2>
+        <p>We’re looking forward to celebrating together! To help make these two days special while keeping costs manageable, we welcome contributions of any amount toward food, decorations, and other festivities.</p>
+        <p>Every little bit helps, but most importantly, we want everyone to come and enjoy being together.</p>
+        <p>If you’d like to contribute through Zelle, send it to Vicki at <strong>803-318-0184</strong>.</p>
+      </section>
+
+      <section class="section details" id="updates-section" aria-labelledby="updates" hidden>
+        <h2 id="updates" tabindex="-1">Family updates</h2>
+        <p>Check here for the latest family plans.</p>
+        <div class="announcements" id="announcements"></div>
+      </section>
+    </main>
+    <footer class="section site-footer">
+      <p>Family Holiday Celebration · 2026</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </div>
+</body>
+</html>
