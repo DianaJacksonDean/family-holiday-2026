@@ -6,12 +6,15 @@ const invitationContent = {
     wednesday: [
       {
         title: "Jingle Blades",
+        displayTitle: { before: "Jingle", crossedOut: "Bells", after: "Blades" },
         time: "4:30–5:30 PM",
         dateTime: "2026-11-25T16:30:00-05:00",
         venue: "Craft Axe Throwing",
         address: "101 E. Main St, Lexington, SC 29072",
-        description: "Aim for the bullseye and let an axe fly.\nRSVP if you’d like to give it a try.",
+        description: "Aim for the bullseye and let an axe fly.\nWe’ll cover the cost. Come give it a try!",
         rsvp: true,
+        limitedSpace: true,
+        showContributionNote: true,
       },
       {
         title: "’Twas the Night Before Thanksgiving",
@@ -19,6 +22,7 @@ const invitationContent = {
         dateTime: "2026-11-25T18:30:00-05:00",
         venue: "Beverly’s house",
         description: "Breakfast for dinner, then game night begins.\nCome hungry, get cozy, and see who wins.",
+        rsvp: true,
       },
     ],
     thursday: [
@@ -28,6 +32,7 @@ const invitationContent = {
         dateTime: "2026-11-26T13:00:00-05:00",
         venue: "Angie’s house",
         description: "Come hungry for gravy and ready for Taboo.\nWe’ll give thanks, fill our plates, and share a laugh or two.",
+        rsvp: true,
       },
     ],
   },

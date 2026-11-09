@@ -15,9 +15,9 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="A cranberry ornament with a gold oak leaf and stars on an evergreen background.">
   <link rel="icon" href="assets/holiday-ornament.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="content.js"></script>
-  <script defer src="main.js"></script>
+  <link rel="stylesheet" href="styles.css?v=white-elephant">
+  <script defer src="content.js?v=jingle-bells-blades"></script>
+  <script defer src="main.js?v=put-a-little-in-the-pot"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -43,7 +43,15 @@
         <h2 id="welcome-title">The Holiday Double Feature</h2>
         <p>Christmas comes early, and Thanksgiving’s right on cue.<br>
           We’ve got two days together and a seat saved for you.</p>
-        <p><strong>Please submit a separate RSVP for <u>each person</u> in your household.</strong></p>
+        <div class="welcome-note thanksgiving-note">
+          <h3>A note about Thanksgiving Day</h3>
+          <p>We know most of you already have your own Thanksgiving plans and traditions. There’s absolutely no pressure to change them! We’re just extending the invitation for anyone who doesn’t already have plans.</p>
+        </div>
+        <div class="welcome-note rsvp-note">
+          <h3>Please RSVP by <time id="callout-rsvp-deadline" datetime="2026-11-15">THIS SUNDAY, 11/15</time></h3>
+          <p>Please submit one RSVP for <strong><u>each adult</u></strong> in your household. Kids are welcome and can come along without a separate RSVP.</p>
+          <a class="rsvp-link" href="https://tally.so/r/VpjABl" data-rsvp>Open RSVP form</a>
+        </div>
         <noscript><p class="availability">Turn on JavaScript to see the current event times, locations, and updates.</p></noscript>
       </section>
 
@@ -53,6 +61,19 @@
           <h2 id="wednesday-title">Wednesday</h2>
         </header>
         <div id="wednesday-events"></div>
+        <section class="gift-wrap" aria-labelledby="white-elephant">
+          <div class="gift">
+            <p class="gift-date">Wednesday evening · Optional · Adults only</p>
+            <h3 id="white-elephant">White Elephant Gift Exchange</h3>
+            <div class="gift-copy">
+              <p>Buy and wrap a gift to tuck under the tree.<br>
+                You’ll take one home. Which one? We’ll see!</p>
+              <p>Choose a gift anyone in the group could enjoy. Leave the gift tag blank so the swap stays anonymous.</p>
+              <p><strong>Any gift from $10 to $20 is welcome.</strong></p>
+            </div>
+            <a class="rsvp-link" href="https://tally.so/r/VpjABl" data-rsvp>RSVP for White Elephant (Participation is Optional)</a>
+          </div>
+        </section>
       </section>
 
       <section class="section schedule" aria-labelledby="thursday-title">
@@ -65,7 +86,7 @@
         <section class="gift-wrap" aria-labelledby="gift">
           <div class="gift">
             <p class="gift-date">Thanksgiving Day · Optional</p>
-            <h2 id="gift" tabindex="-1">Wrapped with Reason</h2>
+            <h2 id="gift" tabindex="-1">Wrapped with Reason Gift Exchange</h2>
             <p class="gift-tagline">Because it’s the thought that counts.</p>
             <div class="gift-copy">
               <p>This year, we’re trying something a little different!</p>
@@ -73,7 +94,7 @@
               <p>Handmade gifts, favorite treats, little keepsakes, or something connected to a special memory are all welcome.</p>
               <p><strong>$20 maximum. No minimum. No pressure. Just a little thought and a lot of heart.</strong></p>
             </div>
-            <a class="rsvp-link" href="https://tally.so/r/VpjABl" data-rsvp aria-label="RSVP Required for Wrapped with Reason">RSVP Required</a>
+            <a class="rsvp-link" href="https://tally.so/r/VpjABl" data-rsvp aria-label="RSVP Required (Participation is Optional) for Wrapped with Reason Gift Exchange">RSVP Required (Participation is Optional)</a>
           </div>
         </section>
       </section>
@@ -85,10 +106,10 @@
       </section>
 
       <section class="section details" aria-labelledby="contributions">
-        <h2 id="contributions">A Little Help Goes a Long Way <span aria-hidden="true">❤️</span></h2>
-        <p>We’re looking forward to celebrating together! To help make these two days special while keeping costs manageable, we welcome contributions of any amount toward food, decorations, and other festivities.</p>
-        <p>Every little bit helps, but most importantly, we want everyone to come and enjoy being together.</p>
-        <p>If you’d like to contribute through Zelle, send it to Vicki at <strong>803-318-0184</strong>.</p>
+        <h2 id="contributions">Put a Little in the Pot <span aria-hidden="true">❤️</span></h2>
+        <p>If you’d like to chip in for food and cheer,<br>
+          Vicki’s collecting through Zelle this year.</p>
+        <p>Send donations via Zelle to: <strong>803-318-0184</strong></p>
       </section>
 
       <section class="section details" id="updates-section" aria-labelledby="updates" hidden>
